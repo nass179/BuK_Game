@@ -43,6 +43,7 @@ text = "LVL 10"
 horizontal_alignment = 1
 
 [node name="MoneyDisplay" type="Label" parent="."]
+layout_mode = 0
 offset_left = 194.0
 offset_top = 1.0
 offset_right = 461.0
