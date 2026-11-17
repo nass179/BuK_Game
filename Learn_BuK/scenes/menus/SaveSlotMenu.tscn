@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwqnxu2jvl5we"]
+[gd_scene load_steps=4 format=3 uid="uid://bwqnxu2jvl5we"]
 
+[ext_resource type="Script" path="res://scripts/menuscripts/SaveSlotMenu.gd" id="1_ca1ji"]
 [ext_resource type="Texture2D" uid="uid://l1cwvaideu80" path="res://Assets/backgrounds/menu_background.jpg" id="1_y1w3n"]
 
 [sub_resource type="SystemFont" id="SystemFont_monpp"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ca1ji")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -108,3 +110,5 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_font_sizes/font_size = 31
 text = "Neues Spiel"
+
+[connection signal="pressed" from="TextureRect/MarginContainer/VBoxContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

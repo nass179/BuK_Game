@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://b65hpf4qktft6"]
+
+[ext_resource type="Script" path="res://scripts/chapterscripts/chapter1Scripts/c_1_level_1.gd" id="1_g4ecb"]
+[ext_resource type="Texture2D" uid="uid://l1cwvaideu80" path="res://Assets/backgrounds/menu_background.jpg" id="1_mopvj"]
+[ext_resource type="PackedScene" uid="uid://do3ic2dl0ny2h" path="res://scenes/learnMode/dialogue_container.tscn" id="2_wbqpw"]
+
+[node name="c1Level1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g4ecb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -9.16525e-05
+texture = ExtResource("1_mopvj")
+expand_mode = 1
+
+[node name="DialogueLayer" type="CanvasLayer" parent="."]
+
+[node name="DialogueContainer" parent="DialogueLayer" instance=ExtResource("2_wbqpw")]
+
+[node name="start_button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "start"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]

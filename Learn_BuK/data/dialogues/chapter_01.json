@@ -1,0 +1,30 @@
+
+{
+  "chapter": 1,
+  "dialogues": {
+	"introduction": [
+	  {
+		"speaker": "Mentor",
+		"text": "Willkommen in Kapitel 1!"
+	  },
+	  {
+		"speaker": "Mentor",
+		"text": "Heute lernst du die Grundlagen."
+	  },
+	  {
+		"speaker": "Spieler",
+		"text": "Alles klar, legen wir los!"
+	  }
+	],
+	"tutorial": [
+	  {
+		"speaker": "Mentor",
+		"text": "Klicke auf den Start-Button."
+	  },
+	  {
+		"speaker": "Mentor",
+		"text": "Sehr gut! Du hast das Tutorial abgeschlossen."
+	  }
+	]
+  }
+}
